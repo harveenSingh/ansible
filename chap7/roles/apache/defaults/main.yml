@@ -1,2 +1,4 @@
 ---
 # defaults file for apache
+http-listen-port: 8080
+app_version: v2

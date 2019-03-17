@@ -1,0 +1,17 @@
+---
+- name : Remove httpd on all app servers
+  hosts : app
+  become : true
+  tasks :
+    - name : remove http 
+      yum :
+        name  : httpd
+        state : absent
+- name : Remove ngnix on all app servers
+  hosts : app
+  become : true
+  tasks :
+    - name : remove ngix 
+      yum :
+        name  : nginx
+        state : absent        

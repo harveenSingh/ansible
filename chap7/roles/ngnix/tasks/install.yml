@@ -1,0 +1,4 @@
+- name : install ngnix server
+  yum : 
+     name : ngnix
+     state : present

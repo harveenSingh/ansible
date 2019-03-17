@@ -1,8 +1,9 @@
 ---
-  - hosts: app
+  - name : Installing and configuring the the httpd on app server
+    hosts: app
+    vars:
+      app_version: v3
     become: true
     roles:
       - apache
-      - php 
-      - frontend
-      
+    

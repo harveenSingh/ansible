@@ -1,8 +1,8 @@
 ---
-  - name: copy over httpd configs
+  - name: copy over app
     copy: 
-      src: httpd.conf
-      dest: /etc/httpd/conf/httpd.conf
+      src: index_{{app_version}}.html
+      dest: /var/www/html/index.html
       owner: root
       group: root
       mode: 0644

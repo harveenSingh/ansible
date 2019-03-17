@@ -1,0 +1,6 @@
+---
+- name : copy file to ngnix
+  template:
+      dest: /var/www/html/index.html # required. Location to render the template to on the remote machine.
+      src: files/index.html # required. Path of a Jinja2 formatted template on the Ansible controller. This can be a relative or absolute path.
+      
