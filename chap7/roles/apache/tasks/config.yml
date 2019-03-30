@@ -1,7 +1,7 @@
 ---
   - name: copy over httpd configs
-    copy: 
-      src: httpd.conf
+    template: 
+      src: httpd.conf.j2
       dest: /etc/httpd/conf/httpd.conf
       owner: root
       group: root
